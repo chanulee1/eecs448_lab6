@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link href="style.css" 
+        rel="stylesheet" 
+        type="text/css"/>
+        <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+    <body>        
+        <form name="myForm" onsubmit="return validateForm()" action="customerBackend.php" method="post" >
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password: </label>
+            <input type="text" id="password" name="password">
+            <p>Items for sale: </p>
+            <p>TV ($200)</p>
+            <input type="radio" id="no_buy" name="tv" value="no_buy">
+            <label for="no_buy">Don't Buy</label>
+            <input type="radio" id="buy" name="tv" value="buy">
+            <label for="buy">Buy</label>
+            <p>Banana ($3)</p>
+            <input type="radio" id="no_buy" name="banana" value="no_buy">
+            <label for="no_buy">Don't Buy</label>
+            <input type="radio" id="buy" name="banana" value="buy">
+            <label for="buy">Buy</label>
+            <p>Tennis Ball ($1)</p>
+            <input type="radio" id="no_buy" name="tennis" value="no_buy">
+            <label for="no_buy">Don't Buy</label>
+            <input type="radio" id="buy" name="tennis" value="buy">
+            <label for="buy">Buy</label>
+            <p>Shipping</p>
+            <input type="radio" id="free" name="shipping" value="free_7day">
+            <label for="free">Free 7 day</label>
+            <input type="radio" id="overnight" name="shipping" value="over_night">
+            <label for="overnight">$50.00 over night</label>
+            <input type="radio" id="threeday" name="shipping" value="three_day">
+            <label for="threeday">$5.00 three day</label>
+            <br><br><input type="reset">
+            <br><br><input type="submit">
+        </form>
+    </body>
+</html>
